@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Homepage</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: none;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+	
+
+        .container {
+            display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-between;
+        }
+	.our-school{
+	    flex: 1;
+            margin: 10px;
+	    width: 48%;
+            padding: 15px;
+	    box-sizing: border-box;
+            background: #e9f7ff;
+            border: 1px solid #ccc;
+	    height: 600px;
+	    max-width: 600px;
+	}
+
+        .welcome-section {
+            margin-bottom: 30px;
+	    text-align:right;
+        }
+
+        h1, h2 {
+            margin: 0;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+	    margin-top: 5px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            background-color: #000000;
+            color: lime;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        header img {
+            height: 110px;
+            width: auto;
+            position: absolute;
+            top: 10px;
+        }
+
+        .deped-logo {
+            left: 60px;
+        }
+
+        .school-logo {
+            right: 60px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #9FE2BF;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: blue;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+	/* Main Content */
+	main {
+	    display: flex;
+	    margin: 5px;
+	    max-width: 1400px; /* Adjust this value as needed */
+	    margin-left: none;
+	    margin-right: none;
+	}
+
+	/* School Image Slider */
+	.school-slider {
+	    position: relative;
+	    width: 60%;  /* Adjust this width to your preference (can be percentage or fixed pixels, e.g., 600px) */
+	    height: 200px;  
+	    margin: auto;
+	    overflow: hidden;
+	    border-radius: 8px;
+	}
+
+	.school-slides {
+	    display: flex;
+	    transition: transform 0.5s ease-in-out;
+	}
+
+	.school-slides img {
+	    transform: none;
+	    width: 60%;  /* Ensure the images fill the container */
+	    height: 100%;
+	    position: static;  
+	    object-fit: contain;  /* Ensures images are fully contained without zooming or cropping */
+	    flex-shrink: 0;
+	}
+
+
+        .announcements {
+            flex: 1;
+            margin: 5px;
+	    width: 50%;
+            padding: 15px;
+	    box-sizing: border-box;
+            background: #e9f7ff;
+            border: 2px solid #ccc;
+	    height: 700px;
+	    max-width: 600px;
+        }
+
+        /* Announcement Slider */
+        .announcement-slider {
+            position: relative;
+            width: 95%;
+            max-width: 1200px;
+            height: 600px;
+            margin: 5px;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .announcement-slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .announcement-slides img {
+            width: 98%;
+            height: 70%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        button.prev, button.next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        button.prev {
+            left: 10px;
+        }
+
+        button.next {
+            right: 10px;
+        }
+
+        button.prev:hover, button.next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .main-content {
+            flex: 2;
+            padding: 15px;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	    height: 700px;
+        }
+
+        .photo-gallery {
+            margin-bottom: 15px;
+	    height: 250px;
+        }
+
+        .photo-gallery img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+       /* Google Map */
+	.contact-info iframe {
+	    width: 80%; /* Makes the iframe take up full width of the container */
+	    max-width: 500px; /* Set a max-width to control the size */
+	    height: 200px; /* Adjust the height */
+	    border: none;
+	    border-radius: 10px;
+	    margin-left: 2%;
+	    margin-right: auto;
+	}
+
+        /* Footer */
+	footer {
+	    background-color: #000;
+	    color: #fff;
+	    text-align: left;
+	    padding: 20px;
+	    height:  70px;
+	    position: relative;
+	    width: 100%;
+	    margin-top: 5px; /* Added to avoid overlap */
+	}
+
+	.footer-content {
+	    max-width: 1200px;
+	    margin: 0 auto;
+	}
+
+	.footer-content h2 {
+	    margin-top: 0;
+	}
+
+	footer ul {
+	    list-style-type: none;
+	    padding: 0;
+	}
+
+	footer ul li {
+	    margin: 5px 0;
+	}
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Department_of_Education.svg/2000px-Department_of_Education.svg.png" alt="DepEd Logo" class="deped-logo">
+        <h1>DOANE DUMANGAS FUNDAMENTAL CHRISTIAN ACADEMY</h1>
+        <p>Welcome to Our School! We are dedicated to providing quality education and fostering a positive learning environment.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq1658PIvhgnMUyMy7M_xI5-35vLPSMMA8OIECF8bVoXDTOHkONxMYe2rSj9xProDsCk0&usqp=CAU" alt="School Logo" class="school-logo">
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="file:///C:/Users/MARK%20SERVANDIL/Desktop/ITAS%20Websites/homepage.html#home">Home</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/about us.html#about us">About Us</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/our programs.html#programs">Our Programs</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/community.html#community">Community</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/calendar.html#events">Event Highlights</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/sports.html#sports">Sports & Advertisements</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/alumni.html#alumni#alumni">Alumni</a>
+    </nav>
+
+    <main>
+        <div class="announcements">
+            <h2>Announcements</h2>
+            <p>Stay updated with the latest news and events.</p>
+            <div class="announcement-slider">
+                <button class="prev" onclick="moveSlide(-1, 'announcement')">&#10094;</button> <!-- Left arrow -->
+                <div class="announcement-slides">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKK7iYgK9_BYNyJksK4j45G7seffh0G-sFWA&s" alt="Announcement 1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOsRjOhq8elp2kwkD6hz3G4Mue6OsqXqF-DH_kY-SHb1ha8ZLqI0VOJTAPMc3ywE_cSj4&usqp=CAU" alt="Announcement 2">
+                </div>
+                <button class="next" onclick="moveSlide(1, 'announcement')">&#10095;</button> <!-- Right arrow -->
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="photo-gallery">
+                <h2>Our School</h2>
+                <div class="school-slider">
+                    <button class="prev" onclick="moveSlide(-1, 'school')">&#10094;</button> <!-- Left arrow -->
+                    <div class="school-slides">
+                        <img src="https://scontent.fceb1-2.fna.fbcdn.net/v/t1.15752-9/462549059_936524358329214_3539980634142648930_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEDctLQjFmcvWxpqYqVD3oK0HExgfgL9NfQcTGB-Av01z_LhmEZQbRCqUZKZwSeGXJcJUdN5p99t9qbo5RkAz8X&_nc_ohc=C508caH1f3sQ7kNvgH3n0yi&_nc_zt=23&_nc_ht=scontent.fceb1-2.fna&oh=03_Q7cD1QFoGNbqWlFE91L0aG9LxbUsda0F5dLAgJowFg0Fsrcnig&oe=6769177A" alt="School Image 1">
+                        <img src="https://scontent.fceb1-1.fna.fbcdn.net/v/t1.15752-9/462570119_1631117074283632_2393442113409703168_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFvTNpLLgQn-N437O8um1yIPVKCyd-swv09UoLJ36zC_fJxFSZKZqLe3R0phstjpdgEOvoJrLr7atFoXIPSdGAl&_nc_ohc=7eT-PL58Gx4Q7kNvgElTvYI&_nc_zt=23&_nc_ht=scontent.fceb1-1.fna&oh=03_Q7cD1QFJUh01KakshiPpfPMEc4Qr7fyy8LcfoUoqAem02_Wcsw&oe=6768E1C2" alt="School Image 2">
+                        <img src="https://scontent.fceb1-2.fna.fbcdn.net/v/t1.15752-9/462576788_884892987106901_8242758277705381897_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFqJSfSNWDE2Z18H1hUl_sHAzcBZrq0NJIDNwFmurQ0koN9iI5LyAsfVDCDRuOeQ_DBtErPlNOK1WcjZIVcupaU&_nc_ohc=fC2fWFUl-CIQ7kNvgExnfNp&_nc_zt=23&_nc_ht=scontent.fceb1-2.fna&oh=03_Q7cD1QGV5o_eiqS4FRDw9d1qV1mZijD_i9UX6_noBxfjTaVnmg&oe=6768EF2F" alt="School Image 2">
+			<img src="https://scontent.fceb1-4.fna.fbcdn.net/v/t1.15752-9/462579126_620794840354416_5096336047724218353_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeH1Fby7Qor9b6SstSn2JwfC7YN1vi37r2ztg3W-LfuvbJZ0cCsx3i08KkPetMVLOvnoRIU5I6z1AZKpQgFN21ym&_nc_ohc=-IB_G0AOUHgQ7kNvgHPZgcy&_nc_zt=23&_nc_ht=scontent.fceb1-4.fna&oh=03_Q7cD1QEmNwtmlWNuD0ajGcjhOq7DqJF2sSERZFtk8JV7DZR-jA&oe=67690B58" alt="School Image 2">
+			<img src="https://scontent.fceb1-3.fna.fbcdn.net/v/t1.15752-9/462554418_544942384992485_8639846552013167275_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEW1ExYP7B6ZnAZWfiolzQa3oOOfu4kFpneg45-7iQWmWNkDpk92-MXbr9hSAKFy11lK7xfpPiRztxACEKQh4f4&_nc_ohc=8ncklgu6Wy0Q7kNvgGr51q1&_nc_zt=23&_nc_ht=scontent.fceb1-3.fna&oh=03_Q7cD1QG1TKQWLQ9nRQB6hbQcPp_cwhOiwo5L9l4TXxmtMc9ePw&oe=67691016" alt="School Image 2">
+		   </div>
+                    <button class="next" onclick="moveSlide(1, 'school')">&#10095;</button> <!-- Right arrow -->
+                </div>
+            
+	</div><h2>
+
+            Welcome To Doane Dumangas Fundamental Christian Academy </h2>
+            <pre><h3>
+  <strong>"Education is the most powerful weapon which you can use to change the world." – Nelson Mandela
+    At Doane Dumangas Fundamental Christian Academy, we embrace the profound role of education in 
+  shaping the future. Our institution stands as a beacon of learning and growth, where curiosity
+  is nurtured, values are instilled, and lifelong skills are honed. With a firm belief in the power
+  of knowledge and character, we strive to empower every student to excel in an ever-evolving world.
+
+    Our mission is rooted in a commitment to holistic development. Beyond academic excellence, we
+  cultivate creativity, resilience, and a spirit of service, fostering an environment where learners
+  thrive both as individuals and as members of a greater community. Through a dynamic curriculum,
+  innovative programs, and the unwavering dedication of our educators, we aim to inspire minds and
+  ignite aspirations.
+
+    Guided by our motto, "Strive for progress, not perfection," inspired by David Perlmutter,
+  we emphasize the importance of growth and perseverance over flawless outcomes. This philosophy
+  encourages our students to embrace challenges as opportunities and to celebrate every milestone
+  as a step toward their fullest potential.
+
+    As you explore our website, we invite you to discover the vibrant community, achievements, and
+  opportunities that define Doane Dumangas Fundamental Christian Academy. Together, let us shape
+  a brighter tomorrow, one learner, one dream, and one accomplishment at a time. Welcome to a place
+  where aspirations meet purpose, and where every child is empowered to make a difference.</strong>
+	  </pre>
+        </div>
+    </main>
+
+<!-- Google Map and Facebook Section -->
+<section id="map-and-fb" class="contact-info" style="display: flex; justify-content: space-between; margin-top: 20px;">
+    <!-- Google Map -->
+    <div style="flex: 1; margin-right: 20px;">
+        <h2>&nbsp;&nbsp;&nbsp;Find Us</h2>
+       	<strong>&nbsp;&nbsp;&nbsp;Here’s the map showing the location of our school:</strong>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.7783178537775!2d122.70721227408822!3d10.825783458283318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aee0025f7c2663%3A0x5cb43c5e29dbae49!2sDoane%20Dumangas%20Fundamental%20Christian%20Academy!5e1!3m2!1sen!2sph!4v1732194244986!5m2!1sen!2sph">
+		width="600"
+		height="450"
+		style="border:0;"
+		allowfullscreen=""
+		loading="lazy"
+		referrerpolicy="no-referrer-when-downgrade">
+	</iframe>"
+    </div>
+
+    <!-- Embedded Facebook Page -->
+    <div style="flex: 1;">
+        <h2>Follow Us on Facebook</h2>
+        <div class="fb-page" 
+             data-href="https://web.facebook.com/DDFCAcademy/?_rdc=1&_rdr" 
+             data-tabs="timeline" 
+             data-width="100%" 
+             data-height="300" 
+             data-small-header="false" 
+             data-adapt-container-width="true" 
+             data-hide-cover="false" 
+             data-show-facepile="true">
+            <blockquote cite="https://web.facebook.com/DDFCAcademy/?_rdc=1&_rdr" class="fb-xfbml-parse-ignore">
+                <a href="https://web.facebook.com/DDFCAcademy/?_rdc=1&_rdr">Doane Dumangas Fundamental Christian Academy</a>
+            </blockquote>
+        </div>
+    </div>
+</section>
+
+<!-- Include Facebook SDK -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v21.0"></script>
+
+<!-- Custom JavaScript to Ensure Facebook Embeds Load Properly -->
+<script>
+window.onload = function() {
+    // Initialize Facebook embed once the page is fully loaded
+    FB.XFBML.parse();
+};
+</script>
+
+<footer>
+    <div class="footer-content">
+            <pre>
+            Contact Us:
+                If you have any questions or inquiries, feel free to contact us!
+                Phone: (+63) 910 1509 686   |  Email: doanedumangas43@yahoo.com  |  Address: Baras St, Dumangas,Philippines
+                &copy;2024 Doane Dumangas Fundamental Christian Academy. All rights reserved.
+            </pre>
+    </div>
+</footer>
+
+
+
+    <script>
+        let currentSlideAnnouncement = 0;
+        let currentSlideSchool = 0;
+
+        function moveSlide(direction, sliderType) {
+            let slides;
+            let totalSlides;
+            if (sliderType === 'announcement') {
+                slides = document.querySelector('.announcement-slides');
+                totalSlides = slides.children.length;
+                currentSlideAnnouncement = (currentSlideAnnouncement + direction + totalSlides) % totalSlides;
+                slides.style.transform = 'translateX(' + (-currentSlideAnnouncement * 100) + '%)';
+            } else if (sliderType === 'school') {
+                slides = document.querySelector('.school-slides');
+                totalSlides = slides.children.length;
+                currentSlideSchool = (currentSlideSchool + direction + totalSlides) % totalSlides;
+                slides.style.transform = 'translateX(' + (-currentSlideSchool * 100) + '%)';
+            }
+        }
+    </script>
+</body>
+</html>

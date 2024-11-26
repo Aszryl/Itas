@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports and Achievements</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            background-color: #000000;
+            color: lime;
+            padding: 15px 0;
+            position: relative;
+        }
+
+        header img {
+            height: 110px;
+            width: auto;
+            position: absolute;
+            top: 10px;
+        }
+
+        .deped-logo {
+            left: 60px;
+        }
+
+        .school-logo {
+            right: 60px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #9FE2BF;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: blue;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* Page Title and Quote */
+        .title-section {
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: #9FE2BF;
+            border-radius: 8px;
+            color: #000;
+        }
+
+        .title-section h1 {
+            font-size: 2.5rem;
+        }
+
+        .title-section p {
+            font-style: italic;
+            color: #444;
+        }
+
+        /* Leaderboard Section */
+        .leaderboard {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .leaderboard .column {
+            width: 45%;
+            margin: 10px;
+            padding: 15px;
+            background-color: #ffffff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .leaderboard h2 {
+            text-align: center;
+        }
+
+        /* Sports and Achievers Section */
+        .sports-achievers {
+            margin: 20px;
+        }
+
+        .sports-category {
+            margin-bottom: 20px;
+        }
+
+        .sports-category h2 {
+            color: #000;
+            background-color: #9FE2BF;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .achiever {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .achiever img {
+            width: 100px;
+            height: 100px;
+            margin-right: 15px;
+            border-radius: 50%;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .achiever .description {
+            flex-grow: 1;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+	 /* Footer */
+	footer {
+	    background-color: #000;
+	    color: #fff;
+	    text-align: left;
+	    padding: 20px;
+	    height:  70px;
+	    position: relative;
+	    width: 100%;
+	    margin-top: 5px; /* Added to avoid overlap */
+	}
+
+	.footer-content {
+	    max-width: 1200px;
+	    margin: 0 auto;
+	}
+
+	.footer-content h2 {
+	    margin-top: 0;
+	}
+
+	footer ul {
+	    list-style-type: none;
+	    padding: 0;
+	}
+
+	footer ul li {
+	    margin: 5px 0;
+	}
+      
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Department_of_Education.svg/2000px-Department_of_Education.svg.png" alt="DepEd Logo" class="deped-logo">
+        <h1>DOANE DUMANGAS FUNDAMENTAL CHRISTIAN ACADEMY</h1>
+        <p>Welcome to Our School! We are dedicated to providing quality education and fostering a positive learning environment.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq1658PIvhgnMUyMy7M_xI5-35vLPSMMA8OIECF8bVoXDTOHkONxMYe2rSj9xProDsCk0&usqp=CAU" alt="School Logo" class="school-logo">
+    </header>
+
+    <nav>
+        <a href="file:///C:/Users/MARK%20SERVANDIL/Desktop/ITAS%20Websites/homepage.html#home">Home</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/about us.html#about">About Us</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/our programs.html#programs">Our Programs</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/community.html#community">Community</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/calendar.html#events">Event Highlights</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/sports.html#sports">Sports & Achievements</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/alumni.html#alumni">Alumni</a>
+    </nav>
+
+    <section class="title-section">
+        <h1>Sports and Achievements</h1>
+        <p>"Success is not just about winning; it's about effort, dedication, and teamwork."</p>
+    </section>
+
+    <section class="leaderboard">
+        <div class="column">
+            <h2>Sports Rankings</h2>
+            <ul>
+                <li>Basketball - Champion: (Name, Grade, Address)</li>
+		<li>Basketball - 1st Place: (Name, Grade, Address)</li>
+		<li>Basketball - Group Champion: (Names, Grades, Address)</li>
+		<li>Volleyball - Champion: (Name, Grade, Address)</li>
+                <li>Volleyball - 1st Place:(Name, Grade, Address)</li>
+		<li>Volleyball - Group Champion: (Name, Grade, Address)</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Academic Rankings</h2>
+            <ul>
+                <li>Math Quiz Bee - 1st Place(Name, Grade, Address)</li>
+                <li>Science Fair - Runner-Up(Name, Grade, Address)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="sports-achievers">
+        <div class="sports-category">
+            <h2>Basketball</h2>
+            <div class="achiever">
+                <img src="https://scontent.fceb1-3.fna.fbcdn.net/v/t1.15752-9/462554355_409597785440943_3783783936260099911_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEMCcFDh1x5JH4qRD0PsZr6y8cpj_7yGx_LxymP_vIbH7BfSzO54VUvYExU5nJ0BH4cr4G_6r1N-ZcZLNYuVNgR&_nc_ohc=wvcO4h-1mqgQ7kNvgEJ6O1c&_nc_zt=23&_nc_ht=scontent.fceb1-3.fna&oh=03_Q7cD1QF5bSLj2dsFsMZttgk5Ah11NUhFjhj2zv_2XlXaumIjAQ&oe=676BF5A5" alt="Achiever">
+                <div class="description">
+                    <h3>Name: (Stephen Curry)</h3>
+                    <p>Awardee: (MVP of the Season)</p>
+                </div>
+		<img src="https://scontent.fceb1-3.fna.fbcdn.net/v/t1.15752-9/462571234_432136316443621_8029349935705823633_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFTHGaoTTje9VwUiSvOk9CkBCAYVv2QckUEIBhW_ZByRbZ__69ToSln0jqgG_clZrRyVv327NfbKkq_WhBqg9Co&_nc_ohc=WQpplQ713f4Q7kNvgFqzeLl&_nc_zt=23&_nc_ht=scontent.fceb1-3.fna&oh=03_Q7cD1QFWW60TgeDVhvKtd3UMv1JclOYytlpRG31pxJRDLWL5IQ&oe=676BFBC6" alt="Achiever">
+                <div class="description">
+                    <h3>Name: (Alyza Valdez)</h3>
+                    <p>Awardee: (MVP of the Season)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     <section class="sports-achievers">
+        <div class="sports-category">
+            <h2>Volleyball</h2>
+            <div class="achiever">
+                <img src="https://scontent.fceb1-3.fna.fbcdn.net/v/t1.15752-9/462554355_409597785440943_3783783936260099911_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEMCcFDh1x5JH4qRD0PsZr6y8cpj_7yGx_LxymP_vIbH7BfSzO54VUvYExU5nJ0BH4cr4G_6r1N-ZcZLNYuVNgR&_nc_ohc=wvcO4h-1mqgQ7kNvgEJ6O1c&_nc_zt=23&_nc_ht=scontent.fceb1-3.fna&oh=03_Q7cD1QF5bSLj2dsFsMZttgk5Ah11NUhFjhj2zv_2XlXaumIjAQ&oe=676BF5A5" alt="Achiever">
+                <div class="description">
+                    <h3>Name: (Stephen Curry)</h3>
+                    <p>Awardee: (MVP of the Season)</p>
+                </div>
+		<img src="https://scontent.fceb1-3.fna.fbcdn.net/v/t1.15752-9/462571234_432136316443621_8029349935705823633_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFTHGaoTTje9VwUiSvOk9CkBCAYVv2QckUEIBhW_ZByRbZ__69ToSln0jqgG_clZrRyVv327NfbKkq_WhBqg9Co&_nc_ohc=WQpplQ713f4Q7kNvgFqzeLl&_nc_zt=23&_nc_ht=scontent.fceb1-3.fna&oh=03_Q7cD1QFWW60TgeDVhvKtd3UMv1JclOYytlpRG31pxJRDLWL5IQ&oe=676BFBC6" alt="Achiever">
+                <div class="description">
+                    <h3>Name: (Alyza Valdez)</h3>
+                    <p>Awardee: (MVP of the Season)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     <section class="sports-achievers">
+        <div class="sports-category">
+            <h2>Badminton</h2>
+            <div class="sports-category">
+            <div class="achiever">
+                <img src="https://scontent.fceb1-3.fna.fbcdn.net/v/t1.15752-9/462554355_409597785440943_3783783936260099911_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEMCcFDh1x5JH4qRD0PsZr6y8cpj_7yGx_LxymP_vIbH7BfSzO54VUvYExU5nJ0BH4cr4G_6r1N-ZcZLNYuVNgR&_nc_ohc=wvcO4h-1mqgQ7kNvgEJ6O1c&_nc_zt=23&_nc_ht=scontent.fceb1-3.fna&oh=03_Q7cD1QF5bSLj2dsFsMZttgk5Ah11NUhFjhj2zv_2XlXaumIjAQ&oe=676BF5A5" alt="Achiever">
+                <div class="description">
+                    <h3>Name: (Stephen Curry)</h3>
+                    <p>Awardee: (MVP of the Season)</p>
+                </div>
+		<img src="https://scontent.fceb1-3.fna.fbcdn.net/v/t1.15752-9/462571234_432136316443621_8029349935705823633_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFTHGaoTTje9VwUiSvOk9CkBCAYVv2QckUEIBhW_ZByRbZ__69ToSln0jqgG_clZrRyVv327NfbKkq_WhBqg9Co&_nc_ohc=WQpplQ713f4Q7kNvgFqzeLl&_nc_zt=23&_nc_ht=scontent.fceb1-3.fna&oh=03_Q7cD1QFWW60TgeDVhvKtd3UMv1JclOYytlpRG31pxJRDLWL5IQ&oe=676BFBC6" alt="Achiever">
+                <div class="description">
+                    <h3>Name: (Alyza Valdez)</h3>
+                    <p>Awardee: (MVP of the Season)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     <section class="sports-achievers">
+        <div class="sports-category">
+            <h2>Chess</h2>
+            <div class="sports-category">
+              <div class="achiever">
+                <img src="https://scontent.fceb1-3.fna.fbcdn.net/v/t1.15752-9/462554355_409597785440943_3783783936260099911_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEMCcFDh1x5JH4qRD0PsZr6y8cpj_7yGx_LxymP_vIbH7BfSzO54VUvYExU5nJ0BH4cr4G_6r1N-ZcZLNYuVNgR&_nc_ohc=wvcO4h-1mqgQ7kNvgEJ6O1c&_nc_zt=23&_nc_ht=scontent.fceb1-3.fna&oh=03_Q7cD1QF5bSLj2dsFsMZttgk5Ah11NUhFjhj2zv_2XlXaumIjAQ&oe=676BF5A5" alt="Achiever">
+                <div class="description">
+                    <h3>Name: (Stephen Curry)</h3>
+                    <p>Awardee: (MVP of the Season)</p>
+                </div>
+		<img src="https://scontent.fceb1-3.fna.fbcdn.net/v/t1.15752-9/462571234_432136316443621_8029349935705823633_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFTHGaoTTje9VwUiSvOk9CkBCAYVv2QckUEIBhW_ZByRbZ__69ToSln0jqgG_clZrRyVv327NfbKkq_WhBqg9Co&_nc_ohc=WQpplQ713f4Q7kNvgFqzeLl&_nc_zt=23&_nc_ht=scontent.fceb1-3.fna&oh=03_Q7cD1QFWW60TgeDVhvKtd3UMv1JclOYytlpRG31pxJRDLWL5IQ&oe=676BFBC6" alt="Achiever">
+                <div class="description">
+                    <h3>Name: (Alyza Valdez)</h3>
+                    <p>Awardee: (MVP of the Season)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h2>Gallery of Achievements</h2>
+        <img src="https://bloximages.newyork1.vip.townnews.com/uniondemocrat.com/content/tncms/assets/v3/editorial/e/0b/e0bcf198-75b9-11ed-9cc7-d3c31bc5c237/638fc9ca0e014.image.jpg?resize=1200%2C949" alt="Achievement">
+	<img src="https://sa.kapamilya.com/absnews/abscbnnews/media/2019/tvpatrol/07/09/20190713-alyssa-valdez2.jpg" alt="Achievement">
+    </section>
+    <footer>
+    <div class="footer-content">
+            <pre>
+            Contact Us:
+                If you have any questions or inquiries, feel free to contact us!
+                Phone: (+63) 910 1509 686   |  Email: doanedumangas43@yahoo.com  |  Address: Baras St, Dumangas,Philippines
+                &copy;2024 Doane Dumangas Fundamental Christian Academy. All rights reserved.
+            </pre>
+    </div>
+</footer>
+
+</body>
+</html>

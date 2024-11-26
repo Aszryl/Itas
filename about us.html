@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Homepage</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            padding: 10px;
+            background-color: #f4f4f9;
+        }
+	/* Apply background image to the entire page */
+	body {
+	    background-image: url('https://media.istockphoto.com/id/538303007/photo/old-paper.jpg?s=612x612&w=0&k=20&c=uRaCVlPI51QcSm51C6SDA-fIuiuI202yAvR71sm4glI='); /* Replace with your image path */
+	    background-size: cover; /* Cover the entire page */
+	    background-position: center; /* Center the background image */
+	    background-attachment: fixed; /* Keep the background fixed while scrolling */
+	    background-repeat: no-repeat; /* Ensure the image does not repeat */
+	    margin: 0;
+	    padding: 0;
+	}
+
+	
+        /* Header */
+        header {
+            text-align: center;
+            background-color: #000000;
+            color: lime;
+            padding: 15px 0;
+            position: relative;
+        }
+
+        header img {
+            height: 110px;
+            width: auto;
+            position: absolute;
+            top: 10px;
+        }
+
+        .deped-logo {
+            left: 60px;
+        }
+
+        .school-logo {
+            right: 60px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #9FE2BF;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: blue;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* About Us Section */
+        .about-us {
+            background-color: #e1f5fe;
+            padding: 20px 30px;
+            margin: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-us h2 {
+            color: #2c6b2f;
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .about-us h3 {
+            color: #2c6b2f;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .about-us p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.2;
+            text-align: justify;
+	   
+        }
+	.about-us .section {
+	  width: 90%;
+	  height: 100px auto;
+	  margin: 20px auto;
+	  padding: 20px;
+	  background-color: #e8f5e9;
+	  border-radius: 10px;
+	  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	  overflow: auto; /* Adds a scrollbar if content overflows */
+	}
+
+        .about-us .section h3 {
+            font-size: 26px;
+            color: #00796b;
+        }
+
+        .about-us .section p{
+            font-size: 16px;
+            color: #333;
+	    margin: 5px auto;
+        }
+      
+        /* Footer */
+	footer {
+	    background-color: #000;
+	    color: #fff;
+	    text-align: left;
+	    padding: 20px;
+	    height: 70px;
+	    position: relative;
+	    width: 100%;
+	    margin-top: 5px;
+	}
+
+	.footer-content {
+	    max-width: 1200px;
+	    margin: 0 auto;
+	}
+
+	footer ul {
+	    list-style-type: none;
+	    padding: 0;
+	}
+
+	footer ul li {
+	    margin: 5px 0;
+	}
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Department_of_Education.svg/2000px-Department_of_Education.svg.png" alt="DepEd Logo" class="deped-logo">
+        <h1>DOANE DUMANGAS FUNDAMENTAL CHRISTIAN ACADEMY</h1>
+        <p>Welcome to Our School! We are dedicated to providing quality education and fostering a positive learning environment.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq1658PIvhgnMUyMy7M_xI5-35vLPSMMA8OIECF8bVoXDTOHkONxMYe2rSj9xProDsCk0&usqp=CAU" alt="School Logo" class="school-logo">
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="file:///C:/Users/MARK%20SERVANDIL/Desktop/ITAS%20Websites/homepage.html#home">Home</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/about us.html#about us">About Us</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/our programs.html#programs">Our Programs</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/community.html#community">Community</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/calendar.html#events">Event Highlights</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/sports.html#sports">Sports & Advertisements</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/alumni.html#alumni#alumni">Alumni</a>
+    </nav>
+
+    <!-- About Us Section -->
+    <div class="about-us" id="about">
+        <h2>About Us</h2>
+
+        <div class="section">
+            <h3>Mission</h3>
+            <p> &nbsp; &nbsp;&nbsp;The Doane Dumangas Fundamental Christian Academy(DDFCA)is a bible-centered school committed to provide quality education for pre-school and elementary children. Aims to provide a child centered learning environment contributing to the development and competence of a person for a service to God and Humanity.</p>
+        </div>
+
+        <div class="section">
+            <h3>Vision</h3>
+            <p>&nbsp; &nbsp;&nbsp;To be a model of excellence in Christian education by transforming the hearts and minds through quality education demonstrating the life and teaching of Jesus Christ.</p>
+        </div>
+
+        <div class="section">
+            <h3>Core Values</h3>
+            <p>
+	&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; Maka-Diyos (Faith of God),&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Maka-Tao (Love of Humanity),
+	    </p>
+            <p>
+	&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; Maka-Kalikasan (Love of Nature),&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Maka-Bansa (Love of Country)  
+	    </p>
+        </div>
+
+        <div class="section">
+            <h3>School History</h3>
+            <p>______________________________________________________________________________________________________________________ </p>
+	    <p>_______________________________________________________________________________________________________________________</p>
+	    <p>______________________________________________________________________________________________________________________ </p>
+	    <p>______________________________________________________________________________________________________________________ </p>
+	    <p>______________________________________________________________________________________________________________________ </p>
+	    <p>______________________________________________________________________________________________________________________ </p>
+	    <p>______________________________________________________________________________________________________________________ </p>
+	    <p>______________________________________________________________________________________________________________________ </p>
+	    <p>______________________________________________________________________________________________________________________ </p>
+	    <p>______________________________________________________________________________________________________________________ </p>
+	    <p>______________________________________________________________________________________________________________________ </p>
+	    <p>______________________________________________________________________________________________________________________ </p>
+	    <p>______________________________________________________________________________________________________________________ </p>
+	    <p>______________________________________________________________________________________________________________________ </p>
+ 	    <p>______________________________________________________________________________________________________________________ </p>	 
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <pre>
+            Contact Us:
+                If you have any questions or inquiries, feel free to contact us!
+                Phone: (+63) 910 1509 686   |  Email: doanedumangas43@yahoo.com  |  Address: Baras St, Dumangas,Philippines
+                &copy;2024 Doane Dumangas Fundamental Christian Academy. All rights reserved.
+            </pre>
+        </div>
+    </footer>
+</body>
+</html

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Programs - Elementary School</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            background-color: #000000;
+            color: lime;
+            padding: 15px 0;
+            position: relative;
+        }
+
+        header img {
+            height: 110px;
+            width: auto;
+            position: absolute;
+            top: 10px;
+        }
+
+        .deped-logo {
+            left: 60px;
+        }
+
+        .school-logo {
+            right: 60px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #9FE2BF;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: blue;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* Main Layout */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .content {
+            width: 65%;
+        }
+
+        .slider {
+            width: 30%;
+            background-color: #e8f5e9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .slider img {
+            max-width: 100%;
+            height: 700px;
+            display: none;
+            border-radius: 10px;
+        }
+
+        .slider img.active {
+            display: block;
+        }
+
+        .slider .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .slider button {
+            background-color: #00796b;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .slider button:hover {
+            background-color: #004d40;
+        }
+
+        /* Section Styles */
+        section {
+            background-color: #e8f5e9;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 28px;
+            color: #00796b;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+	footer {
+	    background-color: #000;
+	    color: #fff;
+	    text-align: left;
+	    padding: 20px;
+	    height:  70px;
+	    position: relative;
+	    width: 100%;
+	    margin-top: 5px; /* Added to avoid overlap */
+	}
+
+	.footer-content {
+	    max-width: 1200px;
+	    margin: 0 auto;
+	}
+
+	.footer-content h2 {
+	    margin-top: 0;
+	}
+
+	footer ul {
+	    list-style-type: none;
+	    padding: 0;
+	}
+
+	footer ul li {
+	    margin: 5px 0;
+	}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Department_of_Education.svg/2000px-Department_of_Education.svg.png" alt="DepEd Logo" class="deped-logo">
+        <h1>DOANE DUMANGAS FUNDAMENTAL CHRISTIAN ACADEMY</h1>
+        <p>Welcome to Our School! We are dedicated to providing quality education and fostering a positive learning environment.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq1658PIvhgnMUyMy7M_xI5-35vLPSMMA8OIECF8bVoXDTOHkONxMYe2rSj9xProDsCk0&usqp=CAU" alt="School Logo" class="school-logo">
+    </header>
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="file:///C:/Users/MARK%20SERVANDIL/Desktop/ITAS%20Websites/homepage.html#home">Home</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/about us.html#about us">About Us</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/our programs.html#programs">Our Programs</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/community.html#community">Community</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/calendar.html#events">Event Highlights</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/sports.html#sports">Sports & Achievements</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/alumni.html#alumni#alumni">Alumni</a>
+    </nav>
+
+    <main>
+        <div class="content">
+            <!-- Educational Programs -->
+            <section>
+                <h2>Educational Programs</h2>
+                <p>We provide a wide range of foundational programs tailored to young learners, focusing on essential skills in literacy, numeracy, and critical thinking.</p>
+		<ul>
+                    <li>English Language Arts</li>
+                    <li>Science</li>
+                    <li>Social Studies</li>
+                    <li>Filipino</li>
+		    <li>Mathematics</li>
+               </ul>
+            </section>
+
+            <!-- Special Programs -->
+            <section>
+                <h2>Special Programs</h2>
+                <p>Our special programs aim to nurture each student's unique talents and interests:</p>
+                <ul>
+                    <li>Art & Creativity Workshops</li>
+                    <li>Music Lessons</li>
+                    <li>Environmental Awareness Activities</li>
+                    <li>Physical Education and Sports Training</li>
+                </ul>
+            </section>
+
+            <!-- Learning Resources -->
+            <section>
+                <h2>Learning Resources</h2>
+                <p>We provide access to various learning materials to enhance student learning:</p>
+                <ul>
+                    <li>Textbooks & Worksbooks</li>
+                    <li>Supplementary Reading Materials</li>
+                    <li>Worksheet & Activity Sheets</li>
+                    <li>Reference Materials</li>
+		    <li>E-Books & Online Libraries</li>
+		    <li>Video Resources</li>
+ 		    <li>Interactive Learning Tools</li>
+		    <li>Educational Websites</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Teachers' Organizational Chart Slider -->
+        <div class="slider">
+            <h2>Teachers' Organizational Chart</h2>
+	    <img src="https://scontent.fceb1-5.fna.fbcdn.net/v/t1.15752-9/462572117_1614796242773789_4100541156814631634_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeF-obOpFg09utI-wk_ULvGLY4dZqw6xSa9jh1mrDrFJr0LGf3LAjMQXfRrPGChWdaaG60ecT-rk_iDWPLMbdisd&_nc_ohc=Ggzl4hG-I7wQ7kNvgFMKTxA&_nc_zt=23&_nc_ht=scontent.fceb1-5.fna&oh=03_Q7cD1QFf4gfSNCvGhEXsq9sYIPA43FuFSBOvrSxT1f4ZmuZQFQ&oe=6768E1E0" alt="Chart 1" class="active">
+            <img src="https://scontent.fceb1-5.fna.fbcdn.net/v/t1.15752-9/467474739_1004564474480297_7028254879052890527_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHl-_Gav5uEn1YB2fYc4cn9FXciJuHDoI0VdyIm4cOgjZ_Kohrkq3bEkD55TjJyi2VXDDTTk_Js5b7YV2Xvrg3x&_nc_ohc=roJCWfWKm0gQ7kNvgF9aGG5&_nc_zt=23&_nc_ht=scontent.fceb1-5.fna&oh=03_Q7cD1QHxMH0dY56MHBZAzxpgxAhqvd-VENM3eqqMUJn1osJgGw&oe=6768FBB4" alt="Chart 2">
+            <img src="https://scontent.fceb1-1.fna.fbcdn.net/v/t1.15752-9/462568110_1972231389940921_2742333945136178373_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeE9Fp3sRj_7L42TTjt6ExFtUYbKuGudDQNRhsq4a50NAwVZiO6xZScF4wjkMrTsjgg-OChJr2RA6dRoiMsf-fhi&_nc_ohc=-q1F19kbtqYQ7kNvgGKI3rX&_nc_zt=23&_nc_ht=scontent.fceb1-1.fna&oh=03_Q7cD1QGfgULYMmUVsZgZNBMWtMI4jBvsB4mIcu8vpr7INpT1LA&oe=6768D805" alt="Chart 3">
+            <img src="https://scontent.fceb1-5.fna.fbcdn.net/v/t1.15752-9/467354417_556443500418199_2753694370430528673_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFfJhl7hhLLvIhv11uaNhUlpg5gHHVoQ9amDmAcdWhD1rd8tx1YfA3-V1acGDbcT7eiPEgcVrtATma0dQrX-TRu&_nc_ohc=V9JFt64sIOUQ7kNvgFymWBU&_nc_zt=23&_nc_ht=scontent.fceb1-5.fna&oh=03_Q7cD1QEkVjOzO16zgoKJn-5l5ef7evHsnt7nGkozqe6VXIAoXA&oe=6768F75E" alt="Chart 4">
+	    <img src="https://scontent.fceb1-4.fna.fbcdn.net/v/t1.15752-9/462554899_27648832174764311_5617019674539843849_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEVp5ytqfVyju2ZvYKikKYgFY3XlfurcLsVjdeV-6twu_PVhCKmzf7robnryFIkfLFh_coppF_T_7Rfw-ZuJRza&_nc_ohc=7vzyP7zB3vYQ7kNvgF2IGdU&_nc_zt=23&_nc_ht=scontent.fceb1-4.fna&oh=03_Q7cD1QHEXA1zJoCjHcVLTz3LdiX7XvWto19i6WAQ_1-BvWm4tQ&oe=6768F02F" alt="Chart 5">
+            <img src="https://scontent.fceb1-3.fna.fbcdn.net/v/t1.15752-9/462563290_877745637805686_7462742304106911987_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFlzavjerk5nc4zcUoBwfq0xv8cGQZxSDzG_xwZBnFIPNC2SkPOgcpqAvRv2qZc2wTErBCZjDIUgW-rz5rkG6Nv&_nc_ohc=HIxWTN7RKU0Q7kNvgGjLcIx&_nc_zt=23&_nc_ht=scontent.fceb1-3.fna&oh=03_Q7cD1QEHBgfxIx37SnJxTLAOkRpUUe10mYpYB2j9p4eoSU3now&oe=6768E887" alt="Chart 6">
+	    <img src="https://scontent.fceb1-2.fna.fbcdn.net/v/t1.15752-9/467479240_579872917849000_7408119627104381210_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFZoIdixoI4a2UGnRH_giO6SlArGNCH-69KUCsY0If7rzJA9ealTct6E1CGsWInG1e3YVQlGC0S9dUxnXSjzjZN&_nc_ohc=I_6iytaGeKkQ7kNvgH1K_3e&_nc_zt=23&_nc_ht=scontent.fceb1-2.fna&oh=03_Q7cD1QGGGndE1sjRefC1-x5zlGs1PKPUUb-V5uKQvb-v7Xnnlw&oe=6768EA0C" alt="Chart 7">
+	    <img src="https://scontent.fceb1-4.fna.fbcdn.net/v/t1.15752-9/462584769_507244958442325_7267209991469765860_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHIjDbuPSlzkqnJofQj7a_XQknIgC9fqm5CSciAL1-qbk1ZNG0e3_4e1nz-kxTF6PKdw-KD6qJqubeGggqwM6YQ&_nc_ohc=VRT3GZKpmc4Q7kNvgEiMhVe&_nc_zt=23&_nc_ht=scontent.fceb1-4.fna&oh=03_Q7cD1QFW7XoXtG2iN0PHOlchrBMn6KivPalb6MoSUEAvcDSl4A&oe=6768DCD4" alt="Chart 8">
+	    <img src="https://scontent.fceb1-2.fna.fbcdn.net/v/t1.15752-9/462562755_1301281424554439_1051793921762468306_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeE4EilmNN7wf5iN_98319E0wwSVpLjQgfLDBJWkuNCB8sbLllRF5rvbp4mgFfnq2oadRYduS0jPcTJmVO6pzrwI&_nc_ohc=CgABwq4CufQQ7kNvgEp5fm_&_nc_zt=23&_nc_ht=scontent.fceb1-2.fna&oh=03_Q7cD1QGLFgAFOiwdoXgZeuBckbIgrmS9rlhG9iFdWMbYDDblGA&oe=6768F07A" alt="Chart 9">
+            <div class="controls">
+                <button id="prev">Previous</button>
+                <button id="next">Next</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <pre>
+            Contact Us:
+                If you have any questions or inquiries, feel free to contact us!
+                Phone: (+63) 910 1509 686   |  Email: doanedumangas43@yahoo.com  |  Address: Baras St, Dumangas,Philippines
+                &copy;2024 Doane Dumangas Fundamental Christian Academy. All rights reserved.
+            </pre>
+        </div>
+    </footer>
+
+
+    <script>
+	const images = document.querySelectorAll('.slider img');
+	let currentIndex = 0;
+
+	// Function to update the active image
+	function updateSlider(index) {
+	    images.forEach((img, i) => {
+	        img.classList.toggle('active', i === index);
+	    });
+	}
+	
+	document.getElementById('prev').addEventListener('click', () => {
+	    currentIndex = (currentIndex - 1 + images.length) % images.length;
+	    updateSlider(currentIndex);
+	});
+
+	document.getElementById('next').addEventListener('click', () => {
+	    currentIndex = (currentIndex + 1) % images.length;
+	    updateSlider(currentIndex);
+	});
+     </script>
+</body>
+</html>

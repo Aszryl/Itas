@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Page</title>
+    <style>
+        /* Global Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.1;
+            margin: 0;
+            padding: 0;
+            background-color: #e1f5fe;
+        }
+	/* Header */
+        header {
+            text-align: center;
+            background-color: #000000;
+            color: lime;
+            padding: 15px 0;
+            position: relative;
+        }
+
+        header img {
+            height: 110px;
+            width: auto;
+            position: absolute;
+            top: 10px;
+        }
+
+        .deped-logo {
+            left: 60px;
+        }
+
+        .school-logo {
+            right: 60px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #9FE2BF;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: blue;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        h1, h2 {
+            text-align: center;
+            
+        }
+
+        section {
+            margin: 10px auto;
+            padding: 20px;
+            max-width: 1100px;
+            background-color: #e8f5e9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Featured Alumni Section */
+        .featured-alumni .alumni {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .alumni img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .alumni h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        /* Alumni Directory */
+        .alumni-directory ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .alumni-directory ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Testimonials */
+        .testimonials blockquote {
+            font-style: italic;
+            color: #555;
+            margin: 10px 0;
+            padding-left: 20px;
+            border-left: 3px solid #4CAF50;
+        }
+
+        /* Events Section */
+        .alumni-events p {
+            text-align: center;
+            color: #888;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        
+        /* Footer */
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: left;
+            padding: 20px;
+            height: 70px;
+            position: relative;
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+	.footer-content h2 {
+	    margin-top: 0;
+	}
+
+
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Department_of_Education.svg/2000px-Department_of_Education.svg.png" alt="DepEd Logo" class="deped-logo">
+        <h1>DOANE DUMANGAS FUNDAMENTAL CHRISTIAN ACADEMY</h1>
+        <p>Welcome to Our School! We are dedicated to providing quality education and fostering a positive learning environment.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq1658PIvhgnMUyMy7M_xI5-35vLPSMMA8OIECF8bVoXDTOHkONxMYe2rSj9xProDsCk0&usqp=CAU" alt="School Logo" class="school-logo">
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="file:///C:/Users/MARK%20SERVANDIL/Desktop/ITAS%20Websites/homepage.html#home">Home</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/about us.html#about us">About Us</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/our programs.html#programs">Our Programs</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/community.html#community">Community</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/calendar.html#events">Event Highlights</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/sports.html#sports">Sports & Advertisements</a>
+        <a href="file:///C:/Users/MARK SERVANDIL/Desktop/ITAS Websites/alumni.html#alumni">Alumni</a>
+    </nav>
+
+<!-- Title and Welcome Message -->
+<section class="alumni-header">
+    <h1>Welcome to Our Alumni Page</h1>
+    <p>Our alumni are an integral part of our community. This page celebrates their achievements and fosters connections among past, present, and future students.</p>
+</section>
+
+<!-- Featured Alumni Section -->
+<section class="featured-alumni">
+    <h2>Featured Alumni</h2>
+    <div class="alumni">
+        <img src="https://scontent.fceb1-2.fna.fbcdn.net/v/t1.15752-9/462554355_409597785440943_3783783936260099911_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEMCcFDh1x5JH4qRD0PsZr6y8cpj_7yGx_LxymP_vIbH7BfSzO54VUvYExU5nJ0BH4cr4G_6r1N-ZcZLNYuVNgR&_nc_ohc=wvcO4h-1mqgQ7kNvgEJ6O1c&_nc_zt=23&_nc_ht=scontent.fceb1-2.fna&oh=03_Q7cD1QFEAHtgW24tcZnBhuq3POZYe4is_MkwVeV_XZtOGIrgVQ&oe=676BF5A5" alt="Alumni Photo">
+        <div>
+            <h3>Name: </h3>
+            <p>Class of (Year) and Course</p>
+        </div>
+    </div>
+    <div class="alumni">
+        <img src="https://scontent.fceb1-3.fna.fbcdn.net/v/t1.15752-9/462571234_432136316443621_8029349935705823633_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFTHGaoTTje9VwUiSvOk9CkBCAYVv2QckUEIBhW_ZByRbZ__69ToSln0jqgG_clZrRyVv327NfbKkq_WhBqg9Co&_nc_ohc=WQpplQ713f4Q7kNvgFqzeLl&_nc_zt=23&_nc_ht=scontent.fceb1-3.fna&oh=03_Q7cD1QFWW60TgeDVhvKtd3UMv1JclOYytlpRG31pxJRDLWL5IQ&oe=676BFBC6" alt="Alumni Photo">
+        <div>
+            <h3>Name: </h3>
+            <p>Class of (Year) and Course</p>
+        </div>
+    </div>
+</section>
+
+<!-- Alumni Directory -->
+<section class="alumni-directory">
+    <h2>Alumni Directory</h2>
+    <ul>
+        <li><strong>Class of (Year)</strong>Name</li>
+        <li><strong>Class of (Year)</strong>Name</li>
+        <li><strong>Class of (Year)</strong>Name</li>
+    </ul>
+</section>
+
+<!-- Testimonials and Stories -->
+<section class="testimonials">
+    <h2>Alumni Testimonials</h2>
+    <blockquote>
+        <p>(story)"My time at this school was transformative. It provided me with the foundation I needed for a successful career."</p>
+        <cite>- Name: , Class of (Year)</cite>
+    </blockquote>
+    <blockquote>
+        <p>(story)"The supportive community and dedicated teachers shaped my future in unimaginable ways."</p>
+        <cite>- Name: , Class of (Year)</cite>
+    </blockquote>
+</section>
+
+<!-- Alumni Events -->
+<section class="alumni-events">
+    <h2>Alumni Events</h2>
+    <p>There are no upcoming events at the moment. Stay tuned for updates!</p>
+</section>
+
+<!-- Gallery of Achievements -->
+<section class="alumni-gallery">
+    <h2>Gallery of Achievements</h2>
+    <div class="gallery">
+        <img src="https://www.shutterstock.com/shutterstock/photos/1219856326/display_1500/stock-vector-illustration-of-young-people-friends-classmates-students-colleagues-family-posing-for-group-1219856326.jpg" alt="Achievement 1">
+        <img src="https://www.stonybrook.edu/commcms/reunions/images/Student%20Group%20Shot.jpg" alt="Achievement 2">
+        <img src="https://www.shutterstock.com/shutterstock/photos/1219856326/display_1500/stock-vector-illustration-of-young-people-friends-classmates-students-colleagues-family-posing-for-group-1219856326.jpg" alt="Achievement 3">
+        <img src="https://www.stonybrook.edu/commcms/reunions/images/Student%20Group%20Shot.jpg" alt="Achievement 4">
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+            <pre>
+            Contact Us:
+                If you have any questions or inquiries, feel free to contact us!
+                Phone: (+63) 910 1509 686   |  Email: doanedumangas43@yahoo.com  |  Address: Baras St, Dumangas,Philippines
+                &copy;2024 Doane Dumangas Fundamental Christian Academy. All rights reserved.
+            </pre>
+    </div>
+</footer>
+
+
+</body>
+</html>
